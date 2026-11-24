@@ -1,0 +1,4 @@
+../Core/Src/mvp_telemetry.c:37:17:next_frequency_hz	24	static
+../Core/Src/mvp_telemetry.c:64:17:period_ticks	16	static
+../Core/Src/mvp_telemetry.c:69:6:MvpTelemetry_Init	32	static
+../Core/Src/mvp_telemetry.c:97:6:MvpTelemetry_Poll	24	static

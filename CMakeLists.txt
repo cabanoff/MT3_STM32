@@ -44,7 +44,7 @@ target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
 
 # Add sources to executable
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
-    # Add user sources here
+    Core/Src/mvp_telemetry.c
 )
 
 # Add include paths
@@ -52,9 +52,9 @@ target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined include paths
 )
 
-# Add project symbols (macros)
+option(MT3_MVP_STANDALONE "Advance telemetry slots every 125 ms without receiver sync" OFF)
 target_compile_definitions(${CMAKE_PROJECT_NAME} PRIVATE
-    # Add user defined symbols
+    MT3_MVP_STANDALONE=$<BOOL:${MT3_MVP_STANDALONE}>
 )
 
 # Remove wrong libob.a library dependency when using cpp files

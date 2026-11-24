@@ -18,6 +18,13 @@
             }
         },
         {
+            "name": "Bench",
+            "inherits": "Debug",
+            "cacheVariables": {
+                "MT3_MVP_STANDALONE": "ON"
+            }
+        },
+        {
             "name": "Release",
             "inherits": "default",
             "cacheVariables": {
@@ -29,6 +36,10 @@
         {
             "name": "Debug",
             "configurePreset": "Debug"
+        },
+        {
+            "name": "Bench",
+            "configurePreset": "Bench"
         },
         {
             "name": "Release",
